@@ -8,6 +8,7 @@ import Man from "./components/UI/Man";
 import Carousel from "./components/Carousel"; // Imported Carousel component
 import Doctor from "./Images/doc.jpg";
 import Gost from "./Images/Untitled.png";
+import { Link } from "react-router-dom";
 
 const Home = ({ setCurrentPage }) => {
   return (
@@ -25,11 +26,10 @@ const Home = ({ setCurrentPage }) => {
             officia. Quo perspiciatis itaque quod voluptatem. Optio deleniti quo
             quis facere?
           </p>
-          <button
-            onClick={() => setCurrentPage("/")}
-            className="px-6 py-2 bg-[#455A64] text-white font-semibold rounded-full"
-          >
-            Get Started
+          <button className="px-6 py-2 bg-[#455A64] text-white font-semibold rounded-full">
+            <Link to="/services" className="cursor-pointer">
+              Get Started
+            </Link>
           </button>
         </div>
         <div>
@@ -73,9 +73,7 @@ const Home = ({ setCurrentPage }) => {
         <div className="absolute -top-10 left-0">
           <Man />
         </div>
-        {/* <div className="absolute -bottom-60 z-0 -right-20">
-          Placeholder for additional content like waves or decorations
-        </div> */}
+
         <div className="flex flex-col items-start justify-start mt-5 h-full gap-5 w-1/2 mr-10">
           <h3 className="font-semibold">About Us</h3>
           <h1 className="text-5xl font-semibold z-10 leading-snug">
@@ -92,16 +90,16 @@ const Home = ({ setCurrentPage }) => {
             diam sed et. A in ullamcorper ipsum justo vestibulum sit cursus A
             risus donec eget enim.
           </p>
-          <button
-            onClick={() => setCurrentPage("About")}
-            className="px-6 py-2 bg-[#455A64] text-white font-semibold rounded-full"
-          >
-            See Details
+          <button className="px-6 py-2 bg-[#455A64] text-white font-semibold rounded-full">
+            {" "}
+            <Link to="/about" className="cursor-pointer">
+              See Details
+            </Link>
           </button>
         </div>
       </section>
 
-      <section className="relative w-screen flex flex-col items-center justify-center">
+      <section className="relative w-screen  flex flex-col items-center justify-center  ">
         <div className="text-center text-black text-xl font-semibold -mt-32">
           Services
         </div>
@@ -115,72 +113,11 @@ const Home = ({ setCurrentPage }) => {
           <Carousel />
         </section>
       </div>
-      <section>
-        <div className="flex items-center w-fit  min-h-screen  ">
-          <div className="flex bg-white flex items-center rounded-lg   ">
-            <div className="flex-shrink-0  ">
-              <img
-                src={Doctor}
-                alt="Consultant"
-                className="h-64 w-64 object-cover  rounded-lg"
-              />
-            </div>
-            <div className="p-8">
-              <h2 className="text-2xl font-bold text-gray-900">
-                Introducing Experienced Consulting
-              </h2>
-              <div className="mt-4">
-                <h3 className="text-xl font-semibold text-gray-800">
-                  Professional Growth
-                </h3>
-                <p className="mt-2 text-gray-600">
-                  Lorem ipsum dolor sit amet consectetur. Convallis est urna
-                  adipiscing fringilla nulla
-                </p>
-              </div>
-              <div className="mt-6">
-                <h3 className="text-xl font-semibold text-gray-800">
-                  Reduced Burnout
-                </h3>
-                <p className="mt-2 text-gray-600">
-                  Lorem ipsum dolor sit amet consectetur. Convallis est urna
-                  adipiscing fringilla nulla
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div className="flex items-center justify-center pb-52 pl-28 ">
-          <div className="flex flex-col md:flex-row items-center bg-white rounded-lg  overflow-hidden">
-            <div className="md:w-1/2 p-8">
-              <h2 className="text-sm font-semibold text-gray-700">Team</h2>
-              <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mt-2">
-                Caring for Your Mental Health Get to Know Our Team of Experts
-              </h1>
-              <p className="mt-4 text-gray-600">
-                Lorem ipsum dolor sit amet consectetur. Convallis est urna
-                adipiscing fringilla nulla diam lorem non mauris. Ultrices
-                aliquet at quam adipiscing.
-              </p>
-              <button className="mt-8 px-6 py-2 bg-green-500 text-white rounded-full hover:bg-green-600">
-                See more
-              </button>
-            </div>
-            <div className="md:w-1/2">
-              <img
-                src={Gost}
-                alt="Mental Health"
-                className="h-96 w-96 object-cover md:h-full"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+
+      <section></section>
 
       <section>
-        <div className="mx-auto max-w-2xl lg:text-center mb-6">
+        <div className="mx-auto max-w-2xl lg:text-center mb-6 pt-44">
           <h2 className="text-3xl font-semibold leading-tight text-black sm:text-4xl lg:text-4xl">
             Frequently Asked Questions
           </h2>

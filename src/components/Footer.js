@@ -1,14 +1,29 @@
-import React from 'react';
-import { Facebook, Instagram, Linkedin, Twitter, Youtube } from 'lucide-react';
-import Wave from './UI/Wave';
+import React from "react";
+import { Facebook, Instagram, Linkedin, Twitter, Youtube } from "lucide-react";
+import Wave from "./UI/Wave";
 
 function Footer() {
   const Links = [
-    { icon: <Instagram className="text-green-700" />, link: "https://www.instagram.com/" },
-    { icon: <Facebook className="text-green-700" />, link: "https://www.instagram.com/" },
-    { icon: <Youtube className="text-green-700" />, link: "https://www.instagram.com/" },
-    { icon: <Twitter className="text-green-700" />, link: "https://www.instagram.com/" },
-    { icon: <Linkedin className="text-green-700" />, link: "https://www.instagram.com/" },
+    {
+      icon: <Instagram className="text-green-700" />,
+      link: "https://www.instagram.com/",
+    },
+    {
+      icon: <Facebook className="text-green-700" />,
+      link: "https://www.instagram.com/",
+    },
+    {
+      icon: <Youtube className="text-green-700" />,
+      link: "https://www.instagram.com/",
+    },
+    {
+      icon: <Twitter className="text-green-700" />,
+      link: "https://www.instagram.com/",
+    },
+    {
+      icon: <Linkedin className="text-green-700" />,
+      link: "https://www.instagram.com/",
+    },
   ];
 
   return (
@@ -36,8 +51,8 @@ function Footer() {
           </div>
           <div className="flex flex-col items-start justify-start gap-y-5 font-normal text-primary/80">
             <span className="font-semibold text-primary">Contact</span>
-            <div>+91 5464 8272</div>
-            <div>sociable@gmail.com</div>
+            <div>+91 91730 58096</div>
+            <div>sociable@gmail.com </div>
             <div>Lazyy Tower 192, Burn Swiss</div>
           </div>
           <div className="flex flex-col items-start justify-start gap-y-5 font-normal text-primary/80">
@@ -55,7 +70,11 @@ function Footer() {
       </div>
       <div className="flex items-center justify-between gap-5 mb-5">
         {Links.map((link, index) => (
-          <a key={index} href={link.link} className="hover:opacity-75 transition-opacity">
+          <a
+            key={index}
+            href={link.link}
+            className="hover:opacity-75 transition-opacity"
+          >
             {link.icon}
           </a>
         ))}

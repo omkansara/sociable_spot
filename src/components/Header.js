@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Wave from "./UI/Wave";
-import logo from "../Images/logo.jpg";
+import logo from "../Images/logo.1.jpg";
 
 function Header() {
   return (
@@ -15,11 +15,7 @@ function Header() {
             <span>Sociable</span>
             <span>Spot</span>
           </div>
-          <img
-            src={logo}
-            alt="Logo"
-            className="w-10 h-auto mix-blend-multiply"
-          />
+          <img src={logo} alt="Logo" className="w-20 h-20 mix-blend-multiply" />
         </div>
         <div className="flex items-center gap-x-8 font-semibold text-primary h-16">
           <Link to="/" className="cursor-pointer">
