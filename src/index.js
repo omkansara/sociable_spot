@@ -7,6 +7,7 @@ import Contact from "./Contact";
 import Gallery from "./Gallery";
 import About from "./About";
 import Blogs from "./Blogs";
+import Auth from "./Auth";
 import reportWebVitals from "./reportWebVitals";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -24,6 +25,7 @@ const Main = () => {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/about" element={<About />} />
           <Route path="/blogs" element={<Blogs />} />
+          <Route path="/auth" element={<Auth />} />
         </Routes>
       </div>
       <Footer />

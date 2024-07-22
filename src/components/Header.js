@@ -35,11 +35,14 @@ function Header() {
             About
           </Link>
           <div className="flex-1 flex justify-end">
+            <Link to="/contact" className="">
+              Contact Us
+            </Link>
             <Link
-              to="/contact"
+              to="/auth"
               className="cursor-pointer bg-neutral-600 text-white rounded-3xl pr-8 pl-8 py-2 flex items-center justify-center absolute right-9 -top-2 mt-12"
             >
-              Contact Us
+              Login / Sign Up
             </Link>
           </div>
         </div>
