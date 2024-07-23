@@ -6,8 +6,6 @@ import GreatCommunity from "./components/UI/GreatCommunity";
 import Accessibility from "./components/UI/Accessibility"; // Corrected import
 import Man from "./components/UI/Man";
 import Carousel from "./components/Carousel"; // Imported Carousel component
-import Doctor from "./Images/doc.jpg";
-import Gost from "./Images/Untitled.png";
 import { Link } from "react-router-dom";
 
 const Home = ({ setCurrentPage }) => {
