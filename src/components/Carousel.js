@@ -1,6 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import React from "react";
 
 const Carousel = () => {
   // const carouselRef = useRef(null);
@@ -17,8 +15,8 @@ const Carousel = () => {
   // };
 
   // const dragging = (e) => {
-  //   if (!isDragging) return;
-  //   const newScrollLeft = startScrollLeft - (e.pageX - startX);
+    //   if (!isDragging) return;
+    //   const newScrollLeft = startScrollLeft - (e.pageX - startX);
   //   if (
   //     newScrollLeft <= 0 ||
   //     newScrollLeft >=

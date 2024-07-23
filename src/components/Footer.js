@@ -43,25 +43,25 @@ function Footer() {
         </div>
         <div className="flex items-start ml-10 justify-between w-2/3">
           <div className="flex flex-col items-start justify-start gap-y-5 font-normal text-primary/80">
-            <span className="font-semibold text-primary">Services</span>
+            <span className="font-semibold text-primary text-black">Services</span>
             <div>Psychotherapy</div>
             <div>Mental Counseling</div>
             <div>Support Groups</div>
             <div>Case Management</div>
           </div>
           <div className="flex flex-col items-start justify-start gap-y-5 font-normal text-primary/80">
-            <span className="font-semibold text-primary">Contact</span>
+            <span className="font-semibold text-primary text-black">Contact</span>
             <div>+91 91730 58096</div>
             <div>sociable@gmail.com </div>
             <div>Lazyy Tower 192, Burn Swiss</div>
           </div>
           <div className="flex flex-col items-start justify-start gap-y-5 font-normal text-primary/80">
-            <span className="font-semibold text-primary">Links</span>
+            <span className="font-semibold text-primary text-black">Links</span>
             <div>Privacy Policy</div>
             <div>Terms Of Use</div>
           </div>
           <div className="flex flex-col items-start justify-start gap-y-5 font-normal text-primary/80">
-            <span className="font-semibold text-primary">Maps</span>
+            <span className="font-semibold text-primary text-black">Maps</span>
           </div>
         </div>
       </div>
